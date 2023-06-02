@@ -1,0 +1,142 @@
+{
+  "Name":"Overboss",
+  "DefaultDiceSize":3,
+  "Bags": {
+    "Terrain": [ "Terrain" ],
+    "Token": [ "Token", "Crystal" ],
+  },
+  "RequiredGroups": [ "Dungeon", "Portal" ],
+  "DisplayOrder": [ "Terrain", "Token", "Crystal" ],
+  "DisplayFormat": [
+    { "Source": "Terrain", },
+    { "Source": "Token", "Format": "({0})" }
+  ],
+  "UserSelections":
+  {
+    "Terrain": {
+      "MinCount": 5,
+      "MaxCount": 5,
+      "Options": [ "Camp", "Castle", "Cave", "Cloud Island", "Desert", "Forest", "Graveyard", "Summoning Circle", "Swamp", "Tower", "Volcano" ]
+    }
+  },
+  "PieceTypes": [
+    {
+      "GameGroup": "Camp",
+      "BagGroups": {
+        "Camp": {
+          "Type": "Terrain",
+          "Pieces": [
+            { "Name": "Camp (Red)", "Count": 2 },
+            { "Name": "Camp (Orange)", "Count": 2 },
+            { "Name": "Camp (Yellow)", "Count": 2 },
+            { "Name": "Camp (Green)", "Count": 2 },
+            { "Name": "Camp (Blue)", "Count": 2 },
+            { "Name": "Camp (Purple)", "Count": 2 }
+          ],
+        },
+        "Orc": { "DrawName": "Orc (Camp)", "Type": "Token", "Count": 10 },
+        "Camp Crystal": { "Type": "Crystal", "Count": 1 }
+      }
+    },
+    {
+      "GameGroup": "Castle",
+      "BagGroups": {
+        "Castle": { "Type": "Terrain", "Count": 12 },
+        "Vampire": { "DrawName": "Vampire (Castle)", "Type": "Token", "Count": 10 },
+        "Castle Crystal": { "Type": "Crystal", "Count": 1 }
+      }
+    },
+    {
+      "GameGroup": "Cave",
+      "BagGroups": {
+        "Cave": { "Type": "Terrain", "Count": 12 },
+        "Dragon": { "DrawName": "Dragon (Cave)", "Type": "Token", "Count": 10 },
+        "Cave Crystal": { "Type": "Crystal", "Count": 1 }
+      }
+    },
+    {
+      "GameGroup": "Cloud Island",
+      "BagGroups": {
+        "Cloud Island": { "Type": "Terrain", "Count": 12 },
+        "Harpy": { "DrawName": "Harpy (Cloud Island)", "Type": "Token", "Count": 10 },
+        "Cloud Island Crystal": { "Type": "Crystal", "Count": 1 }
+      }
+    },
+    {
+      "GameGroup": "Desert",
+      "BagGroups": {
+        "Desert": { "Type": "Terrain", "Count": 12 },
+        "Sandworm": { "DrawName": "Sandworm (Desert)", "Type": "Token", "Count": 10 },
+        "Desert Crystal": { "Type": "Crystal", "Count": 1 }
+      }
+    },
+    {
+      "GameGroup": "Dungeon",
+      "BagGroups": {
+        "Dungeon": { "Type": "Terrain", "Count": 8 },
+        "Miniboss": { "Type": "Token", "Count": 6 }
+      }
+    },
+    {
+      "GameGroup": "Forest",
+      "BagGroups": {
+        "Forest": { "Type": "Terrain", "Count": 12 },
+        "Kobold": { "DrawName": "Kobold (Forest)", "Type": "Token", "Count": 10 },
+        "Forest Crystal": { "Type": "Crystal", "Count": 1 }
+      }
+    },
+    {
+      "GameGroup": "Graveyard",
+      "BagGroups": {
+        "Graveyard": {
+          "Type": "Terrain",
+          "Pieces": [
+            { "Name": "Graveyard (1)", "Count": 5 },
+            { "Name": "Graveyard (2)", "Count": 4 },
+            { "Name": "Graveyard (3)", "Count": 3 }
+          ],
+        },
+        "Skeleton": { "DrawName": "Skeleton (Graveyard)", "Type": "Token", "Count": 10 },
+        "Graveyard Crystal": { "Type": "Crystal", "Count": 1 }
+      }
+    },
+    {
+      "GameGroup": "Summoning Circle",
+      "BagGroups": {
+        "Summoning Circle": { "Type": "Terrain", "Count": 12 },
+        "Sorcerobe": { "DrawName": "Sorcerobe (Summoning Circle)", "Type": "Token", "Count": 10 },
+        "Summoning Circle Crystal": { "Type": "Crystal", "Count": 1 }
+      }
+    },
+    {
+      "GameGroup": "Swamp",
+      "BagGroups": {
+        "Swamp": { "Type": "Terrain", "Count": 12 },
+        "Witch": { "DrawName": "Witch (Swamp)", "Type": "Token", "Count": 10 },
+        "Swamp Crystal": { "Type": "Crystal", "Count": 1 }
+      }
+    },
+    {
+      "GameGroup": "Tower",
+      "BagGroups": {
+        "Tower": { "Type": "Terrain", "Count": 12 },
+        "Eye": { "DrawName": "Eye (Tower)", "Type": "Token", "Count": 10 },
+        "Tower Crystal": { "Type": "Crystal", "Count": 1 }
+      }
+    },
+    {
+      "GameGroup": "Volcano",
+      "BagGroups": {
+        "Volcano": { "Type": "Terrain", "Count": 12 },
+        "Elemental": { "DrawName": "Elemental (Volcano)", "Type": "Token", "Count": 10 },
+        "Volcano Crystal": { "Type": "Crystal", "Count": 1 }
+      }
+    },
+    {
+      "GameGroup": "Portal",
+      "BagGroups": {
+        "Portal": { "Type": "Token", "Count": 7 },
+      }
+    }
+  ],
+}
